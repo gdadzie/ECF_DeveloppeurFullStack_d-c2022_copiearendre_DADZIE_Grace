@@ -2,5 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ECF_DeveloppeurFullStack_d-c2022_copiearendre_DADZIE_Grace" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/git@github.com:gdadzie/ECF_DeveloppeurFullStack_d-c2022_copiearendre_DADZIE_Grace.git" vcs="Git" />
   </component>
 </project>

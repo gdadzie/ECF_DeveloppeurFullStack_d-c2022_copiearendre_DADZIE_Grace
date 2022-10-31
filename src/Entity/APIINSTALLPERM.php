@@ -28,7 +28,7 @@ class APIINSTALLPERM
     private $install_id;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="string")
      */
     private $client_id;
 
@@ -106,7 +106,7 @@ class APIINSTALLPERM
         return $this;
     }
 
-    public function getClientId(): ?int
+    public function getClientId(): ?string
     {
         return $this->client_id;
     }

@@ -39,28 +39,29 @@ class APIINSTALLPERMRepository extends ServiceEntityRepository
         }
     }
 
-//    /**
-//     * @return APIINSTALLPERM[] Returns an array of APIINSTALLPERM objects
-//     */
-//    public function findByExampleField($value): array
-//    {
-//        return $this->createQueryBuilder('a')
-//            ->andWhere('a.exampleField = :val')
-//            ->setParameter('val', $value)
-//            ->orderBy('a.id', 'ASC')
-//            ->setMaxResults(10)
-//            ->getQuery()
-//            ->getResult()
-//        ;
-//    }
+    /**
+     * @return APIINSTALLPERM[] Returns an array of APIINSTALLPERM objects
+     */
 
-//    public function findOneBySomeField($value): ?APIINSTALLPERM
-//    {
-//        return $this->createQueryBuilder('a')
-//            ->andWhere('a.exampleField = :val')
-//            ->setParameter('val', $value)
-//            ->getQuery()
-//            ->getOneOrNullResult()
-//        ;
-//    }
+   public function findByExampleField($value): array
+      {
+        return $this->createQueryBuilder('apiinstallperm')
+            ->andWhere('apiinstallperm.branch_id = :val')
+            ->setParameter('val', $value)
+            ->orderBy('apiinstallperm.branch_id', 'ASC')
+            ->setMaxResults(10)
+            ->getQuery()
+            ->getResult()
+        ;
+    }
+
+    public function findOneBySomeField($value): ?APIINSTALLPERM
+    {
+        return $this->createQueryBuilder('apiinstallperm')
+            ->andWhere('apiinstallperm.branch_id = :val')
+            ->setParameter('val', $value)
+            ->getQuery()
+            ->getOneOrNullResult()
+        ;
+    }
 }
